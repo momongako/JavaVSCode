@@ -14,7 +14,7 @@ public class test3 {
             }
             if (dem > max) {
                 max = dem;
-                dodai = i;
+                dodai = i + 1;
             }
         }
         System.out.println("1.1 :" + max);

@@ -17,11 +17,11 @@ public class test2 {
     public static void main(String[] args) {
         int[] A = { 5, 7, 9, 10, 16 };
 
-        if (so(A)) {
-            System.out.println("tang dan");
-        } else {
-            System.out.println("giam dan");
-        }
+        // if (so(A)) {
+        // System.out.println("tang dan");
+        // } else {
+        // System.out.println("giam dan");
+        // }
 
         int[] B = { 5, 7, 1, 9, 10, 16, 4, 6, 8, 3 };
         int dem = 0;
@@ -32,6 +32,7 @@ public class test2 {
             } else {
                 dem = 0;
             }
+
         }
         System.out.println(dem);
 
