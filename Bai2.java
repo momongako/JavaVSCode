@@ -6,41 +6,38 @@ public class Bai2 {
         int[] A = { 5, 1, 9, 10, 16, 4, 6, 8, 3 };
         int max = 1;
         int dem = 1;
-        int dodai = 0;
-        int sumA = 1;
+        int lastNumber = 0;
+        int sumA = A[0];
+        int sumArray = A[0];
         for (int i = 1; i < A.length; i++) {
             if (A[i] > A[i - 1]) {
                 dem++;
+                sumA = A[i] + sumA;
 
             } else {
 
                 dem = 1;
+                sumA = A[i];
             }
-            if (dem > max) {
+            if (dem > max && sumA > 20 && sumA < 100) {
                 max = dem;
-                dodai = i + 1;
-                sumA = A[i] + sumA;
+                lastNumber = i + 1;
+                sumArray = sumA;
+
             }
 
         }
 
         System.out.println("Do dai :" + max);
-        System.out.println("1.2 : " + dodai);
-        System.out.println("Tong : " + sumA);
-        if (sumA > 20 && sumA < 100) {
-            for (int i = dodai - max; i < dodai; i++) {
-                // sumA = A[i] + sumA;
-                System.out.print(A[i] + ",");
+        System.out.println("1.2 : " + lastNumber);
+        System.out.println("sumArray : " + sumArray);
 
-            }
-            System.out.println("!");
+        for (int i = lastNumber - max; i < lastNumber - 1; i++) {
+            // sumA = A[i] + sumA;
+            System.out.print(A[i] + ",");
+
         }
-
-        // for (int i = dodai - max; i < dodai; i++) {
-        // sumA = A[i] + sumA;
-        // System.out.println("mang cua A la : " + A[i]);
-        // }
-        // System.out.println(sumA);
+        System.out.println(A[max] + "!");
 
         // Số chẫn dài nhất
 
@@ -54,19 +51,19 @@ public class Bai2 {
             }
             if (dem > max) {
                 max = dem;
-                dodai = i + 1;
+                lastNumber = i + 1;
                 sumA = A[i] + sumA;
             }
 
         }
         if (sumA > 20) {
-            for (int i = dodai - max; i < dodai; i++) {
+            for (int i = lastNumber - max; i < lastNumber; i++) {
                 // sumA = A[i] + sumA;
                 System.out.println("số chẫn cua A la : " + A[i]);
             }
         }
         System.out.println("1.1 :" + max);
-        System.out.println("1.2 : " + dodai);
+        System.out.println("1.2 : " + lastNumber);
         System.out.println(sumA);
     }
 }
