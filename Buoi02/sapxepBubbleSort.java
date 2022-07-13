@@ -17,6 +17,7 @@ public class sapxepBubbleSort {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                     swapped = true;
+                    System.out.println(temp);
                 }
             }
 
