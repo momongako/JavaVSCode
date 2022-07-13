@@ -17,7 +17,6 @@ public class sapxepBubbleSort {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                     swapped = true;
-                    System.out.println(temp);
                 }
             }
 
@@ -41,7 +40,7 @@ public class sapxepBubbleSort {
         int n = arr.length;
         System.out.println("Mảng ban đầu:");
         printArray(arr, n);
-
+        bubbleSort(arr, n);
         System.out.println("Mảng sau khi sắp xếp:");
         printArray(arr, n);
     }

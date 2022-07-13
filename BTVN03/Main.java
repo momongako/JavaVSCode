@@ -9,6 +9,9 @@ public class Main {
         st.push(60);
         st.push(80);
         st.display();
-
+        System.out.println(" ");
+        int y = st.deleteFromFront();
+        System.out.println("delete : " + y);
+        st.display();
     }
 }

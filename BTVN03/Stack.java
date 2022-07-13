@@ -13,7 +13,9 @@ public class Stack {
         this.top = null;
     }
 
-    private int size;
+    boolean isEmpty() {
+        return top == null;
+    }
 
     private class Node {
 
@@ -29,11 +31,20 @@ public class Stack {
         top = temp;
     }
 
+    int deleteFromFront() {
+        if (isEmpty()) {
+            return -1;
+        }
+        int x = top.data;
+        top = top.link;
+        return x;
+    }
+
     public void display() {
-        System.out.println("last dâta" + top.data);
+        System.out.println("last data : " + top.data);
         if (top == null) {
             System.out.printf("\nStack Underflow");
-            exit(1);
+            return;
         } else {
             Node temp = top;
             while (temp != null) {
