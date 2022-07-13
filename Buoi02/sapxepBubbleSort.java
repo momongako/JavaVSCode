@@ -40,7 +40,7 @@ public class sapxepBubbleSort {
         int n = arr.length;
         System.out.println("Mảng ban đầu:");
         printArray(arr, n);
-        bubbleSort(arr, n);
+
         System.out.println("Mảng sau khi sắp xếp:");
         printArray(arr, n);
     }
