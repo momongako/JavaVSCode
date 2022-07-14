@@ -30,11 +30,10 @@ public class test {
         }
 
         // Check for the last element in the array
-        ans = Math.max(ans, count);
+
         return ans;
     }
 
-    // Driver Code
     public static void main(String args[]) {
         int arr[] = { 5, 1, 9, 10, 16, 4, 6, 8, 3 };
 
