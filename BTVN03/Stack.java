@@ -7,6 +7,12 @@ import static java.lang.System.exit;
  */
 public class Stack {
 
+    private class Node {
+
+        int data; // integer data
+        Node link; // reference variable Node type
+    }
+
     private Node top;
 
     public Stack() {
@@ -15,12 +21,6 @@ public class Stack {
 
     boolean isEmpty() {
         return top == null;
-    }
-
-    private class Node {
-
-        int data; // integer data
-        Node link; // reference variable Node type
     }
 
     public void push(int x) {
