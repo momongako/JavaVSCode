@@ -69,9 +69,12 @@ class BSTree {
             return false;
         if (nX.left == null || nX.right == null) { // case 1,2.
             if (parentX == null) {
-                root = root.right;
+                // root = root.right;
                 if (root.left != null)
                     root = root.left;
+                else {
+                    root = root.right;
+                }
             } else if (parentX.key < x) {
                 parentX.right = nX.right;
                 if (nX.left != null)
@@ -117,7 +120,7 @@ public class DeleteTree {
         bst.insert(30);
         bst.insert(35);
         bst.printTree(bst.root);
-        bst.delete(20);
+        bst.delete(10);
         System.out.println("");
         bst.printTree(bst.root);
     }
