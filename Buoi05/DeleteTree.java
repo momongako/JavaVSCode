@@ -1,4 +1,3 @@
-package Buoi05;
 
 class Node {
 
