@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ReadOuput",
+            "request": "launch",
+            "mainClass": "BTVN05.Ex02.ReadOuput",
+            "projectName": "JavaVSCode_9bc97d10"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadFrom",
+            "request": "launch",
+            "mainClass": "BTVN05.Ex02.ReadFrom",
+            "projectName": "JavaVSCode_9bc97d10"
+        },
+        {
+            "type": "java",
             "name": "Launch ReadFrom",
             "request": "launch",
             "mainClass": "BTVN05.Ex02.ReadFrom",
