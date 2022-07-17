@@ -1,6 +1,8 @@
 package BTVN05.Ex01;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
@@ -19,7 +21,7 @@ public class WithRead {
         int[] number1 = new int[10];
         try {
             br = new BufferedReader(new FileReader("BTVN05\\Ex01\\file-content.txt"));
-
+            DataOutputStream out = new DataOutputStream(new FileOutputStream("BTVN05\\Ex01\\Numbers.txt"));
             // Đọc các ký tự và lưu vào array
             // br.read(array);
             // br.skip(5);
@@ -59,6 +61,7 @@ public class WithRead {
                 }
                 for (int i : a) {
                     System.out.print(i + " ");
+                    out.writeBytes(i + "  ,");
                 }
             // while ((i = br.read()) != -1) {
             //      number[count] = Character.getNumericValue((char) i);
