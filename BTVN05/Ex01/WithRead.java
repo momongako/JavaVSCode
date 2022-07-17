@@ -32,15 +32,34 @@ public class WithRead {
             // int count = 0;
             // int res  = 0 ;
             
-            int a[] = new int[11];
-            String line = br.readLine(); // to read multiple integers line
-            String[] strs = line.trim().split("\\s+");
-            for (int i = 0; i < 10; i++) {
-                a[i] = Integer.parseInt(strs[i]);
-            }
-            for (String string : strs) {
-                System.out.print(string);
-            }
+            // int a[] = new int[11];
+            // String line = br.readLine(); // to read multiple integers line
+            // String[] strs = line.trim().split("\\s+");
+            // for (int i = 0; i < 10; i++) {
+            //     a[i] = Integer.parseInt(strs[i]);
+            // }
+            
+
+            String[] integersInString = br.readLine().split(" ");
+                int a[] = new int[integersInString.length];
+                for (int i = 0; i < integersInString.length; i++) {
+                    a[i] = Integer.parseInt(integersInString[i]);
+                }
+                for (int i = 1; i < a.length; ++i) {
+                    int key = a[i];
+                    int j = i - 1;
+        
+                    // Di chuyển các phần tử của arr [0 ... i - 1], lớn hơn key
+                    // đến một vị trí trước vị trí hiện tại của chúng
+                    while (j >= 0 && a[j] > key) {
+                        a[j + 1] = a[j];
+                        j = j - 1;
+                    }
+                    a[j + 1] = key;
+                }
+                for (int i : a) {
+                    System.out.print(i + " ");
+                }
             // while ((i = br.read()) != -1) {
             //      number[count] = Character.getNumericValue((char) i);
             //     count++;
