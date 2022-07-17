@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 public class WithRead {
 
    
@@ -12,7 +13,7 @@ public class WithRead {
   
     public static void main(String[] args) throws IOException {
         BufferedReader br = null;
-        int line;
+        
         char[] array = new char[100];
         int[] number = new int[array.length];
         int[] number1 = new int[10];
@@ -20,23 +21,32 @@ public class WithRead {
             br = new BufferedReader(new FileReader("BTVN05\\Ex01\\file-content.txt"));
 
             // Đọc các ký tự và lưu vào array
-            br.read(array);
+            // br.read(array);
             // br.skip(5);
 
             // System.out.print("array : ");
-            System.out.println(array);
-            if (array !=" ") {
-                
-            }
+            // System.out.println(array);
+            
 
-            int i;
-            int count = 0;
-            int res  = 0 ;
+            // int i;
+            // int count = 0;
+            // int res  = 0 ;
+            
+            int a[] = new int[11];
+            String line = br.readLine(); // to read multiple integers line
+            String[] strs = line.trim().split("\\s+");
+            for (int i = 0; i < 10; i++) {
+                a[i] = Integer.parseInt(strs[i]);
+            }
+            for (String string : strs) {
+                System.out.print(string);
+            }
             // while ((i = br.read()) != -1) {
             //      number[count] = Character.getNumericValue((char) i);
             //     count++;
+
                 
-            //     // System.out.print("check" +(char) i);
+            //     System.out.print("check" +(char) i);
                 
              
             // }
