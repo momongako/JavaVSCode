@@ -42,7 +42,7 @@ public class WithRead {
                     a[j + 1] = key;
                 }
                 for (int i : a) {
-                    // System.out.print(i + " ");
+                    System.out.print(i + " ");
                     out.writeBytes(i + " ");
                 }
                 // Đọc file Number

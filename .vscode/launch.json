@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch WithReadNumber",
+            "request": "launch",
+            "mainClass": "BTVN05.Ex01.WithReadNumber",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",
