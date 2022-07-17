@@ -1,0 +1,237 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo",
+            "request": "launch",
+            "mainClass": "BTVN03.Demo",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "BTVN03.Main",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch SetupQ",
+            "request": "launch",
+            "mainClass": "BTVN03.Queue.SetupQ",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "BTVN03.Sochan.test",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch test2",
+            "request": "launch",
+            "mainClass": "BTVN03.Sochan.test2",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentProgram",
+            "request": "launch",
+            "mainClass": "BTVN04.StudentProgram",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjectOutputStreamExample",
+            "request": "launch",
+            "mainClass": "BTVN05.Ex01.ObjectOutputStreamExample",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch WithRead",
+            "request": "launch",
+            "mainClass": "BTVN05.Ex01.WithRead",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bai1",
+            "request": "launch",
+            "mainClass": "Bai1",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bai2",
+            "request": "launch",
+            "mainClass": "Bai2",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bai3",
+            "request": "launch",
+            "mainClass": "Bai3",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch sapxep",
+            "request": "launch",
+            "mainClass": "Buoi02.sapxep",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch sapxep1",
+            "request": "launch",
+            "mainClass": "Buoi02.sapxep1",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch sapxepBubbleSort",
+            "request": "launch",
+            "mainClass": "Buoi02.sapxepBubbleSort",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch sapxepchen",
+            "request": "launch",
+            "mainClass": "Buoi02.sapxepchen",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch sreach",
+            "request": "launch",
+            "mainClass": "Buoi02.sreach",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch BabyDog",
+            "request": "launch",
+            "mainClass": "Buoi03.BabyDog",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch SinglyLL",
+            "request": "launch",
+            "mainClass": "Buoi03.SinglyLL",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sphere",
+            "request": "launch",
+            "mainClass": "Buoi03.Sphere",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch C2",
+            "request": "launch",
+            "mainClass": "Buoi03.package01.C2",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch C3",
+            "request": "launch",
+            "mainClass": "Buoi03.package01.C3",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch C4",
+            "request": "launch",
+            "mainClass": "Buoi03.package02.C4",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch C5",
+            "request": "launch",
+            "mainClass": "Buoi03.package02.C5",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch BSTDemo",
+            "request": "launch",
+            "mainClass": "Buoi04.BSTDemo",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch DeleteTree",
+            "request": "launch",
+            "mainClass": "DeleteTree",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(1)",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch test2(1)",
+            "request": "launch",
+            "mainClass": "test2",
+            "projectName": "JavaVSCode_9f0d7445"
+        },
+        {
+            "type": "java",
+            "name": "Launch test3",
+            "request": "launch",
+            "mainClass": "test3",
+            "projectName": "JavaVSCode_9f0d7445"
+        }
+    ]
+}
