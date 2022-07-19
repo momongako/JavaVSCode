@@ -9,6 +9,20 @@
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Buoi06.HumanCart.Main",
+            "projectName": "JavaVSCode_9bc97d10"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "BTVN06.Main",
+            "projectName": "JavaVSCode_9bc97d10"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Buoi06.HumanCart.Main",
             "projectName": "JavaVSCode_ab63a116"
         },
         {

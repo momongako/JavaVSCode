@@ -22,12 +22,15 @@ public class Main {
 
         Depositors st_ = depositors1;
         Double dtb = dep.get(st_);
+        System.out.println(dtb);
         if (dtb != null) {
-            dtb = dtb + 100;
+
             System.out.println(dtb);
+            dep.put(st_, dtb + 100);
 
         } else {
             dep.put(st_, 100.1);
         }
+        System.out.println(dep);
     }
 }
