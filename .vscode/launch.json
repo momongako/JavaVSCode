@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Buoi06.HumanCart.Main",
+            "projectName": "JavaVSCode_ab63a116"
+        },
+        {
+            "type": "java",
             "name": "Launch HashMap_code",
             "request": "launch",
             "mainClass": "collections.HashMap_code",

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package collections;
+package Buoi06.collections;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -30,7 +30,7 @@ public class Employee2 extends Object {
 
     public String toString() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        return firstName + " " + lastName + " " + dateFormat.format(joinDate);
+        return id + " " + firstName + " " + lastName + " " + dateFormat.format(joinDate);
     }
 
     @Override
