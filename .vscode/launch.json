@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HashMap_code",
+            "request": "launch",
+            "mainClass": "collections.HashMap_code",
+            "projectName": "JavaVSCode_ab63a116"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMap_Equals",
+            "request": "launch",
+            "mainClass": "collections.HashMap_Equals",
+            "projectName": "JavaVSCode_ab63a116"
+        },
+        {
+            "type": "java",
             "name": "Launch WithReadNumber",
             "request": "launch",
             "mainClass": "BTVN05.Ex01.WithReadNumber",
