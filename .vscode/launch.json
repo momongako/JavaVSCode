@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Buoi07.StreamAPI.Main",
+            "projectName": "JavaVSCode_ab63a116"
+        },
+        {
+            "type": "java",
             "name": "Launch InstanceMethodReference",
             "request": "launch",
             "mainClass": "Buoi07.TestAPI.InstanceMethodReference",
