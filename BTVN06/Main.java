@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -36,7 +37,7 @@ public class Main {
 
         // convert map to stream
         // Tìm hóa đơn có theo mã hóa đơn
-        int mahoadon = 2;
+        int mahoadon = 11;
         for (OrderDetail element : list) {
             if (element.getIdOrder().equals(mahoadon)) {
                 System.out.println(element);
