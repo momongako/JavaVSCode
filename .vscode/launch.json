@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "BTVN07.EX01.Main",
+            "projectName": "JavaVSCode_b2850f2e"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "Buoi07.StreamAPI.Main",
             "projectName": "JavaVSCode_ab63a116"
         },

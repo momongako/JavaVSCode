@@ -65,4 +65,8 @@ public class Person implements Comparable<Person> {
     public void setGender(Gender gender) {
         this.gender = gender;
     }
+
+    public Integer getAmount() {
+        return null;
+    }
 }
