@@ -9,63 +9,7 @@
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "BTVN07.EX01.Main",
-            "projectName": "JavaVSCode_b2850f2e"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Buoi07.StreamAPI.Main",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch InstanceMethodReference",
-            "request": "launch",
-            "mainClass": "Buoi07.TestAPI.InstanceMethodReference",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch MethodReference",
-            "request": "launch",
-            "mainClass": "Buoi07.TestAPI.MethodReference",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch LambdaExpressionExample6",
-            "request": "launch",
-            "mainClass": "Buoi07.TestAPI.LambdaExpressionExample6",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch LambdaExpressionExample4",
-            "request": "launch",
-            "mainClass": "Buoi07.TestAPI.LambdaExpressionExample4",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch LambdaExpressionExample",
-            "request": "launch",
-            "mainClass": "Buoi07.TestAPI.LambdaExpressionExample",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch ProcessFile",
-            "request": "launch",
-            "mainClass": "Buoi07.ProcessFile",
-            "projectName": "JavaVSCode_ab63a116"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "BTVN06.Main",
-            "projectName": "JavaVSCode_ab63a116"
+            "projectName": "JavaVSCode_9bc97d10"
         },
         {
             "type": "java",
