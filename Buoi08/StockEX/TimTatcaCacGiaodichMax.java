@@ -1,7 +1,8 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */ 
+ */
+package Buoi08.StockEX;
 
 /**
  *
@@ -26,7 +27,6 @@ import jdbcSQLServer.transact.TransactDemo;
  * @author Admin
  */
 public class TimTatcaCacGiaodichMax {
-    
 
     public static void main(String[] args) {
         Customer raoul = new Customer("Raoul", "Cambridge");
@@ -40,12 +40,11 @@ public class TimTatcaCacGiaodichMax {
                 new Transaction(raoul, 2011, "C", 1000),
                 new Transaction(mario, 2012, "E", 710),
                 new Transaction(mario, 2012, "D", 300),
-                new Transaction(alan, 2012, "B", 950)
-        ); 
+                new Transaction(alan, 2012, "B", 950));
         // Cách 2
-        List<Transaction> maxTrans = new ArrayList<>(); 
-        
-        transactions.stream().forEach( p -> {
+        List<Transaction> maxTrans = new ArrayList<>();
+
+        transactions.stream().forEach(p -> {
             if (maxTrans.size() == 0) {
                 maxTrans.add(p);// giả thiết trans là max
             } else if (p.getAmount() == maxTrans.get(0).getAmount()) {
@@ -59,11 +58,10 @@ public class TimTatcaCacGiaodichMax {
 
         // Cách 3
         System.out.println("------groupingBy------");
-        transactions.stream().collect( Collectors.groupingBy(t -> t.getAmount(), TreeMap::new, toList()))
-                .lastEntry()// 
+        transactions.stream().collect(Collectors.groupingBy(t -> t.getAmount(), TreeMap::new, toList()))
+                .lastEntry()//
                 .getValue()
                 .forEach(System.out::println);
 
- 
     }
 }
