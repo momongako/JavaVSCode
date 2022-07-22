@@ -7,8 +7,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;
 
 public class Main {
 
@@ -60,11 +62,8 @@ public class Main {
                 System.out.println("-----------------------");
                 list.stream().distinct().forEach(System.out::println);
 
-                // khách hàng trùng địa chỉ
-                // List<Customer> listStudent1 = lstCust.stream()
-                // .filter(e -> e.getAddress() == 'hanoi')
-                // .collect(Collectors.toList());
-                List<Customer> uniqueDataList = lstCust.stream().distinct().collect(Collectors.toList());
+                List<Customer> uniqueDataList = lstCust.stream().distinct().collect(Collectors.toList()); // import
+                                                                                                          // Tolist
                 System.out.println("Unique Data List = " + uniqueDataList);
 
                 // in khách hàng chung 1 địa chỉ nào đos
@@ -73,6 +72,7 @@ public class Main {
                 lstCust.stream()
                                 .filter(p -> p.getAddress().equals("HCM"))
                                 .forEach(System.out::println);
+
                 // so lg lon nhat
                 System.out.println("--------------------");
                 Optional<Transaction> max = lstTrans.stream().max((l1, l2) -> l1.getAmount() - l2.getAmount());
@@ -83,5 +83,29 @@ public class Main {
                 Optional<Transaction> min = lstTrans.stream().min((l1, l2) -> l1.getAmount() - l2.getAmount());
                 Transaction sltmin = min.get();
                 System.out.println(sltmin);
+
+                // min vs max cach lam
+
+                // Cách 2
+                List<Transaction> maxTrans = new ArrayList<>();
+
+                lstTrans.stream().forEach(p -> {
+                        if (maxTrans.size() == 0) {
+                                maxTrans.add(p);// giả thiết trans là max
+                        } else if (p.getAmount() == maxTrans.get(0).getAmount()) {
+                                maxTrans.add(p);
+                        } else if (maxTrans.get(0).getAmount() < p.getAmount()) {
+                                maxTrans.clear();
+                                maxTrans.add(p);// cập nhất giả thiết
+                        }
+                });
+                maxTrans.stream().forEach(System.out::println);
+
+                // Cách 3
+                System.out.println("------groupingBy------");
+                lstTrans.stream().collect(Collectors.groupingBy(t -> t.getAmount(), TreeMap::new, toList()))
+                                .lastEntry()
+                                .getValue()
+                                .forEach(System.out::println);
         }
 }
