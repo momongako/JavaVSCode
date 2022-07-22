@@ -22,6 +22,9 @@ public class Transaction {
         amount = v;
     }
 
+    public Transaction(String s, String fpt, String name, String getsIDTrader, String getsIDStock, String getsIDTrader1, Integer amount, Float price) {
+    }
+
     public Customer getCustomer() {
         return trader;
     }
